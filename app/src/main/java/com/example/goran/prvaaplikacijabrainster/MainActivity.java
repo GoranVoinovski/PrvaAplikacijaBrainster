@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
        String underline = "<u>Guest</u>";
 
-                guest.setText(Html.fromHtml("Continue as "+underline));
+                guest.setText(Html.fromHtml("Continue as a "+underline));
 
 
 
