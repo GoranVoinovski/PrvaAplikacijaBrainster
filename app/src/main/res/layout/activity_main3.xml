@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.goran.prvaaplikacijabrainster.Main3Activity">
+
+
+
+        <Spinner
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:id="@+id/spiner"
+            android:elevation="2dp"
+            android:background="@android:color/white"
+            android:layout_width="250dp"
+            android:layout_height="50dp">
+        </Spinner>
+
+
+    <LinearLayout
+        android:padding="10dp"
+        android:id="@+id/ll2"
+        android:layout_toRightOf="@id/spiner"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <Button
+            android:id="@+id/edituser"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@color/colorAccent"
+            android:layout_marginBottom="5dp"
+            android:text="Edit user"/>
+
+       <Button
+           android:id="@+id/adduser"
+           android:background="@color/colorAccent"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Add USer"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll2"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Gender"
+            android:layout_marginLeft="2dp"/>
+
+
+        <RadioGroup
+            android:id="@+id/rg1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edttxtUsername"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+           <RadioButton
+                android:padding="2dp"
+                android:id="@+id/Female2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="F"
+                android:textColor="@color/colorPrimary"/>
+
+            <RadioButton
+                android:padding="2dp"
+                android:id="@+id/male2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M"
+                android:textColor="@color/colorPrimary"/>
+
+        </RadioGroup>
+
+        <FrameLayout
+            android:id="@+id/fl1"
+            android:layout_below="@+id/rg1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/slika"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:src="@drawable/mujer"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/namelastname"
+                android:background="@color/siva"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="right"
+                android:text="@string/Name"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/tvnet"
+            android:layout_below="@+id/fl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/internetnotchecked"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="2dp"/>
+
+        <Button
+            android:id="@+id/checkconnection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvnet"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@color/colorAccent"
+            android:text="@string/btnchecknet"/>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

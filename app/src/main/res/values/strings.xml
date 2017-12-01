@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PrvaAplikacijaBrainster</string>
+    <string name="checkinternet">Check internet connection</string>
+    <string name="internetconnected">Internet is connected fine!</string>
+    <string name="internetnotconnected">No Internet connection!</string>
+    <string name="internetnotchecked">Check if you are conneceted!</string>
+    <string name="backact4">Back</string>
+    <string name="Guest">Continue as Guest</string>
+    <string name="Name">Name Lastname</string>
+    <string name="btnchecknet">Check internet connection</string>
+</resources>
